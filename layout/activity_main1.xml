@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity1"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/img_banner"
+        android:src="@drawable/banner"
+        android:layout_alignParentTop="true"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_below="@+id/img_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:id="@+id/grid_view"
+            android:numColumns="3"
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.navigation.NavigationView
+            app:headerLayout="@layout/navigation_info"
+            app:menu="@menu/drawer_menu"
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:itemTextColor="@color/colorPrimary"
+            app:itemIconTint="@color/colorAccent"
+            android:layout_gravity="start"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:menu="@menu/bottom_menu"
+        android:id="@+id/bottom_menu_home"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

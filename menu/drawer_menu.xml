@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/Message" android:title="Message"
+            android:icon="@drawable/ic_mail_black_24dp"/>
+        <item android:id="@+id/Chat" android:title="Chat"
+            android:icon="@drawable/ic_forum_black_24dp"/>
+        <item android:id="@+id/Share" android:title="Share"
+            android:icon="@drawable/ic_share_black_24dp"/>
+        <item android:id="@+id/Send" android:title="Send"
+            android:icon="@drawable/ic_send_black_24dp"/>
+    </group>
+    <item android:title="Comunicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Slide home" android:icon="@drawable/ic_mail_black_24dp"
+                    android:id="@+id/slide"/>
+                <item android:id="@+id/thoat" android:icon="@drawable/ic_cancel_black_24dp"
+                    android:title="Thoát"/>
+            </group>
+        </menu>
+    </item>
+</menu>
